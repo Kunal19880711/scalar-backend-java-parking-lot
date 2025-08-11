@@ -1,6 +1,6 @@
 package models;
 
-public class Vehicle extends BaseModel {
+public class Vehicle extends BaseClass{
     private String registrationNumber;
     private String ownerName;
     private String ownerContactNumber;
@@ -36,16 +36,5 @@ public class Vehicle extends BaseModel {
 
     public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
-    }
-
-    @Override
-    public String toString() {
-        return "Vehicle{" +
-                "baseModel=" + super.toString() +
-                ", registrationNumber='" + registrationNumber + '\'' +
-                ", ownerName='" + ownerName + '\'' +
-                ", ownerContactNumber='" + ownerContactNumber + '\'' +
-                ", vehicleType=" + vehicleType +
-                '}';
     }
 }

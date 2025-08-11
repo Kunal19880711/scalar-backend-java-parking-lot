@@ -7,6 +7,9 @@ public class IssueTicketResponseDTO {
     private Date entryTime;
     private String slotNumber;
 
+    public IssueTicketResponseDTO() {
+    }
+
     public String getTicketNumber() {
         return ticketNumber;
     }
@@ -29,14 +32,5 @@ public class IssueTicketResponseDTO {
 
     public void setSlotNumber(String slotNumber) {
         this.slotNumber = slotNumber;
-    }
-
-    @Override
-    public String toString() {
-        return "IssueTicketResponseDTO{" +
-                "ticketNumber='" + ticketNumber + '\'' +
-                ", entryTime=" + entryTime +
-                ", slotNumber='" + slotNumber + '\'' +
-                '}';
     }
 }

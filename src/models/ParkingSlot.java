@@ -2,9 +2,9 @@ package models;
 
 import java.util.List;
 
-public class ParkingSlot extends BaseModel {
+public class ParkingSlot extends BaseClass{
     private String number;
-    private ParkingSlotStatus parkingSlotStatus;
+    private ParkingSlotStatus status;
     private List<AllowedVehicles> allowedVehicles;
     private ParkingFloor parkingFloor;
 
@@ -16,12 +16,12 @@ public class ParkingSlot extends BaseModel {
         this.number = number;
     }
 
-    public ParkingSlotStatus getParkingSlotStatus() {
-        return parkingSlotStatus;
+    public ParkingSlotStatus getStatus() {
+        return status;
     }
 
-    public void setParkingSlotStatus(ParkingSlotStatus parkingSlotStatus) {
-        this.parkingSlotStatus = parkingSlotStatus;
+    public void setStatus(ParkingSlotStatus status) {
+        this.status = status;
     }
 
     public List<AllowedVehicles> getAllowedVehicles() {
@@ -38,16 +38,5 @@ public class ParkingSlot extends BaseModel {
 
     public void setParkingFloor(ParkingFloor parkingFloor) {
         this.parkingFloor = parkingFloor;
-    }
-
-    @Override
-    public String toString() {
-        return "ParkingSlot{" +
-                "baseModel=" + super.toString() +
-                ", number='" + number + '\'' +
-                ", parkingSlotStatus=" + parkingSlotStatus +
-                ", allowedVehicles=" + allowedVehicles +
-                ", parkingFloor=" + parkingFloor +
-                '}';
     }
 }

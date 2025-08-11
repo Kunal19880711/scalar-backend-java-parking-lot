@@ -3,7 +3,7 @@ package models;
 import java.util.Date;
 import java.util.List;
 
-public class Bill extends BaseModel {
+public class Bill extends BaseClass{
     private Double amount;
     private Date exitTime;
     private List<Payment> payments;
