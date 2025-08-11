@@ -1,6 +1,6 @@
 package models;
 
-public class AllowedVehicles extends BaseClass {
+public class AllowedVehicles extends BaseModel {
    private VehicleType vehicleType;
    private Integer capacity;
 
