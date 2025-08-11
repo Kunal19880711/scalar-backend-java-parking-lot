@@ -2,10 +2,10 @@ package models;
 
 import java.util.Date;
 
-public class BaseClass {
+public class BaseModel {
     private long id;
-    Date createdAt;
-    Date updatedAt;
+    private Date createdAt;
+    private Date updatedAt;
 
     public long getId() {
         return id;
@@ -29,5 +29,14 @@ public class BaseClass {
 
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseModel{" +
+                "id=" + id +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                '}';
     }
 }

@@ -5,7 +5,7 @@ public class IssueTicketRequestDTO {
     private String ownerName;
     private String ownerContactNumber;
     private String vehicleType;
-    private String gateId;
+    private long gateId;
 
     public String getRegistrationNumber() {
         return registrationNumber;
@@ -39,11 +39,22 @@ public class IssueTicketRequestDTO {
         this.vehicleType = vehicleType;
     }
 
-    public String getGateId() {
+    public long getGateId() {
         return gateId;
     }
 
-    public void setGateId(String gateId) {
+    public void setGateId(long gateId) {
         this.gateId = gateId;
+    }
+
+    @Override
+    public String toString() {
+        return "IssueTicketRequestDTO{" +
+                "registrationNumber='" + registrationNumber + '\'' +
+                ", ownerName='" + ownerName + '\'' +
+                ", ownerContactNumber='" + ownerContactNumber + '\'' +
+                ", vehicleType='" + vehicleType + '\'' +
+                ", gateId='" + gateId + '\'' +
+                '}';
     }
 }
