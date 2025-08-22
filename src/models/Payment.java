@@ -1,6 +1,6 @@
 package models;
 
-public class Payment extends BaseModel {
+public class Payment {
     private String transactionId;
     private PaymentMode paymentMode;
     private Double amount;

@@ -2,7 +2,7 @@ package models;
 
 import java.util.List;
 
-public class ParkingFloor extends BaseClass{
+public class ParkingFloor extends BaseModel {
     private Integer floorName;
     private ParkingFloorStatus parkingFloorStatus;
     private List<ParkingSlot> parkingSlots;
